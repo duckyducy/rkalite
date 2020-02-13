@@ -5,11 +5,9 @@
 
 SoftwareSerial BTSerial(10, 11); // RX | TX
 int state = 20;
-
+int number = 1125;
 
 void setup() {
-
-
   BTSerial.begin(9600); // Default communication rate of the Bluetooth module
 }
 void loop() {
@@ -18,6 +16,6 @@ void loop() {
  }
  // Reading the potentiometer
 
- BTSerial.write("emre"); // Sends potValue to servo motor
- delay(50);
+ BTSerial.write("1125"); // Sends potValue to servo motor
+ delay(500);
 }
